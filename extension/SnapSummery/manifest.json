@@ -1,0 +1,29 @@
+{
+    "name": "SnapSummeryAI",
+    "version": "1.0",   
+    "description": "AI Powered Summary Tool for Web Pages",
+    "manifest_version": 3,
+    "permissions": [
+        "activeTab",
+        "scripting",
+        "storage",
+        "sidePanel"
+    ],
+    "action": {
+        "default_title": "SnapSummeryAI"
+    },
+    "side_panel": {
+        "default_path": "sidepanel.html"
+        
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "host_permissions": [
+        "http://localhost:8080/*",
+        "<all_urls>"
+    ],
+    "content_security_policy": {
+        "extension_pages": "script-src 'self'; object-src 'self'; connect-src http://localhost:8080"
+    }
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnapSummeryAI</title>
+    <link rel="stylesheet" href="sidepanel.css">
+</head>
+<body>
+    <div class="app-wrapper">
+        <header class="header">
+            <div class="header-content">
+                <h1 class="logo">
+                    <span class="logo-icon">⚡</span>
+                    SnapSummeryAI
+                </h1>
+                <p class="tagline">AI-Powered Web Summarizer</p>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <!-- Summarize Section -->
+            <section class="section">
+                <h2 class="section-title">Quick Summarize</h2>
+                <div class="action-group">
+                    <button id="summarizeBtn" class="btn btn-primary">
+                        <span class="btn-icon">✨</span>
+                        Summarize Selected Text
+                    </button>
+                </div>
+            </section>
+
+            <!-- Results Section -->
+            <section class="section">
+                <h2 class="section-title">Summary Result</h2>
+                <div id="results" class="results-container">
+                    <p class="placeholder-text">Select text on any web page and click "Summarize Selected Text" to generate a summary.</p>
+                </div>
+            </section>
+
+            <!-- Notes Section -->
+            <section class="section">
+                <h2 class="section-title">Research Notes</h2>
+                <div class="notes-container">
+                    <textarea 
+                        id="notes" 
+                        class="textarea-input" 
+                        placeholder="Add your research notes, observations, and insights here..."
+                        spellcheck="true">
+                    </textarea>
+                    <button id="saveNotesBtn" class="btn btn-secondary">
+                        <span class="btn-icon">💾</span>
+                        Save Notes
+                    </button>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2026 SnapSummeryAI. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="sidepanel.js"></script>
+</body>
+</html>
