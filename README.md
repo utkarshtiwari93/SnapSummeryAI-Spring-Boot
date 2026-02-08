@@ -47,23 +47,33 @@ Users can highlight text on any webpage, generate an instant AI summary, and sto
 
 ## 📂 Project Structure
 
-```
-SumKeeper/
+SnapSummary/
 │
-├── extension/        # Chrome extension frontend
-│   ├── popup.html
-│   ├── popup.js
-│   ├── style.css
-│   └── manifest.json
+├── extension/                  # Chrome extension
+│   ├── manifest.json
+│   ├── background.js
+│   ├── sidepanel.html
+│   ├── sidepanel.js
+│   ├── sidepanel.css
+│   └── assets/
 │
-├── backend/          # Spring Boot backend
-│   ├── controller/
-│   ├── service/
-│   ├── model/
-│   └── repository/
+├── backend/                    # Spring Boot app
+│   ├── pom.xml
+│   └── src/
+│       └── main/
+│           ├── java/com/generativeAi/aisummary/
+│           │   ├── config/
+│           │   ├── controller/
+│           │   ├── service/
+│           │   ├── model/
+│           │   ├── dto/
+│           │   └── AiSummaryApplication.java
+│           │
+│           └── resources/
+│               ├── application.properties
+│               └── static/
 │
 └── README.md
-```
 
 ---
 
@@ -160,8 +170,8 @@ This project is licensed under the MIT License.
 
 Utkarsh Tiwari  
 Java Full Stack Developer  
-LinkedIn: [your-linkedin]  
-GitHub: [your-github]
+LinkedIn: https://www.linkedin.com/in/utkarsh-tiwari-a73653260/  
+
 
 ---
 
